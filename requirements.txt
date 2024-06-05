@@ -1,0 +1,7 @@
+numpy>=1.19.0
+pandas>=2.1.0
+pykeen>=1.10.1
+tqdm
+
+
+
