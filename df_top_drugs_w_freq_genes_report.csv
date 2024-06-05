@@ -1,0 +1,12 @@
+Compound,Compound_to_Gene_relation,Gene_count,Euclidean_dist_Drug_to_BP,Gene
+Vorinostat,DOWNREGULATES_CdG,7,27.388,"['CCNA2', 'MYC', 'CDK4', 'PDGFA', 'CCNB1', 'MIF', 'ESR1']"
+Dabrafenib,DOWNREGULATES_CdG,6,25.516,"['CCNA2', 'LIF', 'MYC', 'CDC6', 'CCNB1', 'S100A6']"
+Dasatinib,DOWNREGULATES_CdG,6,26.065,"['CCNA2', 'MYC', 'HRAS', 'CDC6', 'CCNB1', 'S100A6']"
+Teniposide,DOWNREGULATES_CdG,5,28.225,"['CCNA2', 'MYC', 'CDK4', 'ZMIZ1', 'CCNB1']"
+Niclosamide,DOWNREGULATES_CdG,4,26.688,"['CCNA2', 'CDC6', 'CCNB1', 'MIF']"
+Niclosamide,UPREGULATES_CuG,4,26.688,"['MYC', 'PDGFA', 'CDKN1A', 'EGFR']"
+Teniposide,UPREGULATES_CuG,3,28.225,"['PDGFA', 'FOSL2', 'CDKN1A']"
+Dabrafenib,UPREGULATES_CuG,2,25.516,"['PDGFD', 'CDKN1A']"
+Dasatinib,BINDS_CbG,2,26.065,"['ABL1', 'PDGFRA']"
+Vorinostat,UPREGULATES_CuG,2,27.388,"['AGT', 'CDKN1A']"
+Dasatinib,UPREGULATES_CuG,1,26.065,['ZMIZ1']

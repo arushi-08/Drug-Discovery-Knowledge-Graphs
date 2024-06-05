@@ -1,0 +1,10 @@
+Compound,Compound_to_Gene_relation,Gene_count,Euclidean_dist_Drug_to_BP,Gene
+Daunorubicin,DOWNREGULATES_CdG,3,25.111,"['CCNA2', 'ABL1', 'MYC']"
+Fluspirilene,DOWNREGULATES_CdG,1,25.162,['MIF']
+Perhexiline,DOWNREGULATES_CdG,2,25.2,"['CCNA2', 'MIF']"
+Perhexiline,UPREGULATES_CuG,2,25.2,"['ZMIZ1', 'CDKN1A']"
+Sorafenib,BINDS_CbG,1,25.322,['PDGFRA']
+Sorafenib,DOWNREGULATES_CdG,4,25.322,"['CCNA2', 'ZMIZ1', 'CCNB1', 'DHX9']"
+Sorafenib,UPREGULATES_CuG,1,25.322,['CDKN1A']
+Vinblastine,DOWNREGULATES_CdG,2,25.323,"['CDC6', 'CDK4']"
+Vinblastine,UPREGULATES_CuG,4,25.323,"['EREG', 'CDKN1A', 'EGFR', 'SPHK1']"
