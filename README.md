@@ -6,14 +6,14 @@ This project focuses on enhancing drug discovery through the use of knowledge gr
 
 ## Objectives
 
-1. Predict the likely missing links in Hetionet KG medication-gene network.
+1. Predict the likely missing links in [Hetionet KG](https://github.com/hetio/hetionet?tab=readme-ov-file) biology network.
 2. Improve drug discovery and explainability by leveraging advanced knowledge graph embeddings.
 
 ## Technologies 
 
 Python
-Libraries and Frameworks: PyKeen
-Models: TransE, TransH, RotatE
+Libraries and Frameworks: [PyKeen](https://pykeen.readthedocs.io/en/stable/)
+Models: [TransE](https://proceedings.neurips.cc/paper_files/paper/2013/hash/1cecc7a77928ca8133fa24680a88d2f9-Abstract.html), [TransH](https://ojs.aaai.org/index.php/AAAI/article/view/8870), [RotatE](https://deepai.org/publication/rotate-knowledge-graph-embedding-by-relational-rotation-in-complex-space)
 
 ### Environment setup
 
