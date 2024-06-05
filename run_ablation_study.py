@@ -1,6 +1,8 @@
 import torch
 from pykeen.ablation import ablation_pipeline
 
+from config import HETIONET_TRAIN_PATH, HETIONET_VAL_PATH, HETIONET_TEST_PATH
+
 metadata = dict(title="Ablation Study Over Hetionet for ComplEx.")
 models = ["ComplEx"]
 losses = ["NSSA"]
@@ -68,15 +70,6 @@ model_to_optimizer_to_optimizer_kwargs_ranges= {
 }
 
 # from pykeen.triples import TriplesFactory
-HETIONET_TRAIN_PATH = (
-    '/afs/cs.pitt.edu/usr0/ars539/biology_project/hetionet_data_train.txt'
-)
-HETIONET_VAL_PATH = (
-    '/afs/cs.pitt.edu/usr0/ars539/biology_project/hetionet_data_val.txt'
-)
-HETIONET_TEST_PATH = (
-    '/afs/cs.pitt.edu/usr0/ars539/biology_project/hetionet_data_test.txt'
-)
 
 datasets = [
     {
