@@ -12,7 +12,7 @@ This project focuses on enhancing drug discovery through the use of knowledge gr
 ## Technologies 
 
 Python
-Libraries and Frameworks: [PyKeen](https://pykeen.readthedocs.io/en/stable/)
+Libraries and Frameworks: [PyKeen](https://pykeen.readthedocs.io/en/stable/) \
 Models: [TransE](https://proceedings.neurips.cc/paper_files/paper/2013/hash/1cecc7a77928ca8133fa24680a88d2f9-Abstract.html), [TransH](https://ojs.aaai.org/index.php/AAAI/article/view/8870), [RotatE](https://deepai.org/publication/rotate-knowledge-graph-embedding-by-relational-rotation-in-complex-space)
 
 ### Environment setup
