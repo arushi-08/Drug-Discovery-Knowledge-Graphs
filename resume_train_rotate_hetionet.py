@@ -1,10 +1,13 @@
+import os
+import datetime
+
 from pykeen.triples import TriplesFactory
 from pykeen.pipeline import pipeline
 from pykeen.hpo import hpo_pipeline
 import torch
 import pandas as pd
 
-import os
+from config import HETIONET_DATA_PATH, HETIONET_TRAIN_PATH, HETIONET_VAL_PATH, HETIONET_TEST_PATH
 
 # Set the CUDA_VISIBLE_DEVICES environment variable
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'  # Use the first and second GPUs
@@ -12,16 +15,13 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '0'  # Use the first and second GPUs
 
 from pykeen.constants import PYKEEN_CHECKPOINTS
 checkpoint = torch.load(PYKEEN_CHECKPOINTS.joinpath(
-    '/afs/cs.pitt.edu/usr0/ars539/.data/pykeen/checkpoints/rotate-checkpoint.pt')
+    os.path.join(HETIONET_DATA_PATH, 'checkpoints/rotate-checkpoint.pt')
                        )
 
 print("Loading data")
 
 # tf = TriplesFactory.from_path(HETIONET_DATA_PATH)
 # training, testing, validation = tf.split([.8, .1, .1])
-HETIONET_TRAIN_PATH = '/afs/cs.pitt.edu/usr0/ars539/biology_project/hetionet_data_bidir_train_entity.txt'
-HETIONET_VAL_PATH = '/afs/cs.pitt.edu/usr0/ars539/biology_project/hetionet_data_bidir_val_entity.txt'
-HETIONET_TEST_PATH = '/afs/cs.pitt.edu/usr0/ars539/biology_project/hetionet_data_bidir_test_entity.txt'
 
 training = TriplesFactory.from_path(
     path=HETIONET_TRAIN_PATH,
@@ -69,5 +69,5 @@ result = hpo_pipeline(
     save_model_directory='.data/pykeen/checkpoints/',
     evaluator_kwargs={"filtered": True, "batch_size":64},
 )
-result.save_to_directory('./train_rotate_model_20231111')
+result.save_to_directory("./train_rotate_model_{datetime.datetime.today().strftime('%Y%m%d')}")
 
